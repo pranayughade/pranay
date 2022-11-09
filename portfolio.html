@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/a952132205.js" crossorigin="anonymous"></script>
+
+    <title>PRANAY UGHADE</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<style>
+    html {
+        background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);
+        /* height: 100%; */
+        background-size: cover;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100%;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    ul{
+        position: sticky;
+        overflow: hidden;
+    }
+
+    nav {
+        display: block;
+        /* padding-top:; */
+        width: 100%;
+        background-color: ;
+        height: 2px;
+
+    }
+
+    .nav__menu {
+        display: block;
+        margin-right: auto;
+        border: 1px solid rgb(152, 152, 230);
+        border-left: 0px;
+        border-right: 0px;
+        background-color: #1c222a;
+        /* margin-left: 5%; */
+    }
+
+    .nav_item {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .nav_link {
+        text-decoration: none;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    /* .nav_link:hover {
+        color: #5091DD;
+    } */
+    .nav-link:hover,
+    .nav-link:focus {
+        box-shadow: 2px 2px 3px rgb(16, 14, 31);
+        transform: translateY(-0.25em);
+        color: white;
+        border: 1px solid rgb(16, 70, 187);
+    }
+
+    #logo {
+        display: block;
+        margin-right: 400px;
+        margin-left: 100px;
+    }
+
+    .home_data {
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        /* font-size: 25px;*/
+
+        display: block;
+        margin-left: 160px;
+        font-size: 2em;
+        margin-inline-start: 160px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        line-height: 2.5em;
+
+    }
+
+
+    .home_title-color {
+        color: rgb(200, 173, 0);
+    }
+
+    .button {
+        width: 30px;
+        padding: 10px;
+        font-size: 25px;
+        text-decoration: none;
+        border: 1px solid gold;
+        border-radius: 5px;
+        background-color: rgb(200, 173, 0);
+        color: rgb(5, 5, 92);
+
+    }
+
+    .port2 {
+        width: 300px;
+        margin-top: -30%;
+        margin-left: 60%;
+        border: 2px solid silver;
+    }
+
+    .section-title {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(200, 173, 0);
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .port4 {
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    .myabout {
+        display: inline-block;
+        margin-left: 1%;
+        margin-top: -50px;
+        width: 500px;
+        padding: 90px;
+        /* border: 2px solid red; */
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+
+        text-align: justify;
+        margin-bottom: 10px;
+
+    }
+
+    .myabout img {
+        margin: 0px 40px 80px 180px;
+        /* padding-left: 30px; */
+        /* border: 2px solid red; */
+    }
+    .Education{
+        display: block;
+        margin-top: -40px;
+    }
+
+
+
+    /* --------ghrce----------- */
+    .myeducation1 {
+        padding: 5px;
+        margin-left: 180px;
+        display: inline-block;
+        block-size: 400px;
+        width: 400px;
+        height: auto;
+        /* border: 2px solid red; */
+
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+        text-align: justify;
+    }
+
+    .myeducation1 img {
+        width: 400px;
+        border-radius: 5px;
+    }
+
+    /* --------BR Jr clg----------- */
+
+    .myeducation2 {
+        padding: 5px;
+        margin-left: 180px;
+        display: inline-block;
+        block-size: 400px;
+        width: 400px;
+        height: auto;
+        /* border: 2px solid red; */
+
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+        text-align: left;
+    }
+
+    .myeducation2 img {
+        width: 400px;
+        border-radius: 5px;
+    }
+
+    /* ----------Janta High School---------- */
+
+    .myeducation3 {
+        padding: 5px;
+        margin-left: 180px;
+        display: inline-block;
+        block-size: 400px;
+        width: 400px;
+        height: auto;
+        /* border: 2px solid red; */
+
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+        text-align: left;
+    }
+
+    .myeducation3 img {
+        width: 400px;
+        border-radius: 5px;
+    }
+
+    /* #ed1 {
+        display: flexbox;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+
+        text-align: justify;
+
+    } */
+    /* hr------ */
+    hr{
+        width: 300px;
+    }
+
+    /* ----------------Experience---------------------- */
+
+    .myexperience{
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: 9%;
+        display: inline-block;
+        block-size: 200px;
+        width: 500px;
+        height: auto;
+        /* border: 2px solid red; */
+
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+        text-align: left;
+        /* background-color: #073b76; */
+    }
+
+    .myexperience a img {
+        width: 400px;
+        margin-left: 10%;
+
+        /* border-radius: 5px; */
+    }
+
+    /* --------------------------footer---------------------- */
+    /* --------------------------footer---------------------- */
+    /* --------------------------footer---------------------- */
+    
+
+    
+    footer {
+            background-color: #1c222a;
+
+            padding: 2em;
+            margin-top: auto;
+            color: #efefef;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+        }
+        .btm-nav {
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'poppins', sans-serif;
+            color: #efefef;
+            font-size: medium;
+            margin: 20px;
+        }
+        .social-icons, a, i{
+            color: #efefef;
+        }
+        .copyr{
+            font-family: 'poppins', sans-serif;
+            color: #efefef;
+            font-size: medium;
+        }
+        #bits_logo{
+            width: 300px;
+            padding-left: 40px;
+        }
+        #sidal_logo{
+            width: 300px;
+            padding: 40px;
+        }
+
+</style>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav_item"><a href="portfolio.html" class="nav_link" id="logo">PRANAY UGHADE</a></li>
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <!-- <li class="nav_item"><a href="#Education" class="nav_link">Education</a></li> -->
+                    <li class="nav_item"><a href="/thelivequote.html" class="nav_link">TheLiveQuote</a></li>
+                    <li class="nav_item"><a href="/thelivepic.html" class="nav_link">TheLivePic</a></li>
+                    <li class="nav_item"><a href="/resume.html" class="nav_link"
+                            target="_blank">Resume</a></li>
+                    <!-- <li class="nav_item"><a href="#Achievements" class="nav_link">Achievements</a></li> -->
+                    <li class="nav_item"><a href="contactus.html" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home_data">
+
+            <h1 class="home__title"><br> Hi,<br>
+                I am <span class="home_title-color"></span><br>
+                Information Technology Student, <br> Community Person, Web Designer <br> and an Avid Learner </h1>
+
+            <a href="contactus.html" class="button">Contact</a>
+            <img src="/port2.jpg" alt="prof_img" class="port2">
+        </div>
+
+	<script>
+		var typing=new Typed(".home_title-color", {
+			strings: [ "PRANAY UGHADE", "Web Designer", "Community Person", "Anchor", "Learner"],
+			typeSpeed: 100,
+			backSpeed: 40,
+			loop: true,
+		});
+	 </script>
+
+    </section>
+
+    <section class="about">
+        <h2 class="section-title">About</h2>
+        <div class="myabout"><img src="/port4.jpg" alt="port4img" class="port4"></div>
+        <div class="myabout">
+            <h2>I am Pranay Ughade</h2>
+            <strong>Engineering is the magic exist in the world.</strong> <br>
+            <p>I am an IT Engineering Student, pursuing my Bachelor in information technology from GH Raisoni College of
+                Engineering Nagpur. I want to use the technology for social good and look forward to create meaningful
+                changes through Technology. Passionate about human-computer interaction, Community Building and Software
+                Development. I see my future taking a deep body of research and contributing to driving innovation in
+                this field. Data Analysis is also the field of technology that really excites me and I am looking
+                forward to learn more about it. <br><br> "Patience is a key element of Success."
+                ~Bill Gates </p>
+        </div>
+    </section>
+    
+    <section class="Education">
+        <h2 class="section-title">Education</h2>
+        <div class="myeducation1"><img src="/port5.jpg" alt="port5img" class="port5"></div>
+        <div class="myeducation1" id="ed1">
+            <h2>GH RAISONI COLLEGE OF ENGG. NAGPUR</h2>
+            <h4>Bachelor of Technology in Information Technology</h4>
+            <p>2020 - 2024 <br>Current CGPA: 8.11 <br> Nagpur, India 440016</p>
+        </div>
+        <hr>
+        <br>
+        <div class="myeducation2"><img src="/port6.jpg" alt="port6img" class="port6"></div>
+        <div class="myeducation2" id="ed2">
+            <h2>Benarasidas Ruiya JUNIOR COLLEGE, KATOL</h2>
+            <h4>Higher Secondary Education</h4>
+            <p>2018 - 2020 <br>HSC Percentage: 86.77% <br> Katol, Nagpur, India 441305</p>
+        </div>
+        <hr>
+        <br>
+        <div class="myeducation3"><img src="/port7.jpg" alt="port7img" class="port7"></div>
+        <div class="myeducation3" id="ed3">
+            <h2>JANTA HIGH SCHOOL LOHARI SAWANGA</h2>
+            <h4>SSC Education</h4>
+            <p>2008 - 2018 <br> SSC Percentage: 90.20% <br> Lo.Sawanga, Narkhed, <br> Nagpur, India 441306</p>
+        </div>
+
+    </section>
+
+    <section class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="myexperience"><a href="certificatess/Beta MLSA.pdf"><img alt="Qries" src="/outer1.png"></div>
+        <div class="myexperience">
+            <h2>Beta-Microsoft Learn Student Ambassador</h2>
+            <h4>August 28, 2022 - Present br INDIA</h4>
+            <strong>- Being a Student Ambassador gives you the experience of working with a team, connects you with other students and Microsoft employees, and equips you with interpersonal skills.
+
+                <br> - Actively collaborate with the community by conducting interviews, hosting events, workshops, or assisting fellow ambassadors with their projects, events, seminars, developing, implementing, and running a questionnaire survey. Skilling up on Microsoft Learn and learning numerous Microsoft technologies.</strong>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br>
+        <div class="myexperience"><a href="certificatess/Alpha MLSA.pdf"><img alt="Qries" src="/outer2.png"></div>
+        <div class="myexperience">
+            <h2>Alpha-Microsoft Learn Student Ambassador</h2>
+            <h4>July 123, 2022 - August 28, 2022</h4>
+            <strong>- Take technical workshops to enrich community's skills.
+                <br> <br>
+                - Build community and grow technical skills. <br> <br>
+                - Learn new skills, solve real world problems, and build communities across the globe. <br><br>
+                - Enhance your social, communication and leadership skills.</strong>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br>
+        <div class="myexperience"><a href="#"><img alt="Qries" src="/outer3.png"></div>
+            <div class="myexperience">
+                <h2>Microsoft Learn Student Ambassador</h2>
+                <h4>May 1, 2022 - july 12, 2022</h4>
+                <strong>- Microsoft Learn Student Ambassadors Program is a program to bring together students from all over the world who have the passion for Technology, have the desire and craze to learn more about technology and help the community.
+                    <br> - The Ambassadors get an opportunity to interact with their peers, mentors, Professionals, learn various Microsoft technologies, and implement it in real world.
+                    <br> - Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical, social and communication skills for the future.</strong>
+            </div>
+            <br><br><br><br>
+        <hr>
+
+        <div class="myexperience"><a href="certificatess/research.pdf"><img alt="Qries" src="/outer4.jpg" id="sidal_logo"></div>
+            <div class="myexperience">
+                <h2>Research Intern</h2>
+                <h4>27th August 2022 - 25th September 2022.</h4>
+                <strong>SIDALCEAS EduTech is an Education based Startup, started in the year 2021. SIDALCEAS EduTech is committed to impart training to the students approaching us. They will be able to get educated under the command of our trainers. Your choice to join SIDALCEAS EduTech accede you to ascend the higher steps of the academic ladder and go beyond. We are optimistic and proud to state that students stepping in the organisation will be able to acquire knowledge as well as practical experience.</strong>
+            </div>
+            <br><br><br><br>
+        <hr>
+
+        <br>
+            <div class="myexperience"><a href="#"><img alt="Qries" src="/bits_logo.png" id="bits_logo"></div>
+                <div class="myexperience">
+                    <h2>Secretary of BITS Forum</h2>
+                    <h4>August, 2022 - Present</h4>
+                    <strong>- BITS Forum is a group of IT Student from GH Raisoni College of Engineering Nagpur which organises the event for students.
+                        <br><br> - Bridge between IT and Students
+                        <br><br> - Empowers the students for technically for their better future</strong>
+                </div>
+        
+    </section>
+    <section class="mycertification">
+
+    </section>
+    <footer>
+           
+        <a href="#" class="btm-nav">home</a>
+        <!-- <p class="btm-nav">|</p> -->
+        <a href="#" class="btm-nav">about us</a>
+        <!-- <p class="btm-nav">|</p> -->
+        <a href="/contactus.html" class="btm-nav">Contact Us</a>
+        <!-- <p class="btm-nav">|</p> -->
+        <a href="https://medium.com/@ughadepranay814/how-to-be-a-microsoft-learn-student-ambassador-all-you-need-to-know-837f989326af" class="btm-nav">blog</a>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/pranay.ughade.756"><i class="fab fa-facebook" ></i></a>
+            <a href=""><i class="fab fa-twitter" ></i></a>
+            <a href="https://www.instagram.com/thelivequote"><i class="fab fa-instagram" ></i></a>
+            <a href="https://www.github.com/pranayughade"><i class="fab fa-github" ></i></a>
+            <a href="https://www.linkedin.com/in/pranay-ughade-3b70a81b4"><i class="fab fa-linkedin" ></i></a>
+            <a href="https://medium.com/@ughadepranay814/how-to-be-a-microsoft-learn-student-ambassador-all-you-need-to-know-837f989326af"><i class="fab fa-medium" ></i></a>
+        </div>
+
+        <div class="copyr">
+            <p>&#xA9; 2022 copyright all right reserved | This site is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by pranay </p>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

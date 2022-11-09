@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a952132205.js" crossorigin="anonymous"></script>
+    <title>CSS Display Property</title>
+    <style>
+        html {
+            background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);
+            /* height: 100%; */
+
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        header {
+            margin: auto;
+            /* border:3px solid red; */
+            width: 1200px;
+        }
+
+        .top img {
+            margin: auto;
+            display: block;
+            border-radius: 50%;
+            width: 100px;
+            border: 3px solid #a1caf1;
+        }
+
+        .top p {
+            color: #a1caf1;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            margin-top: -25px;
+
+        }
+
+
+        h1 {
+            margin-top: -20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px auto 30px auto;
+            text-align: center;
+            color: aliceblue;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 30px;
+            width: 12ch;
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        .box {
+            border: 1px solid white;
+            background-color: rgb(115, 151, 214);
+            padding: 5px;
+            margin: 40px;
+            display: inline-block;
+            width: 400px;
+            height: auto;
+        }
+
+        .container img {
+            /* margin-top: 8px; */
+            vertical-align: middle;
+            width: 100%;
+            filter: grayscale(1) brightness(0.5);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s linear;
+        }
+
+        .container img:hover {
+            filter: grayscale(0);
+        }
+
+
+        .container {
+            align-content: center;
+            margin: auto;
+            width: 100%;
+        }
+
+
+        footer {
+            background-color: #333;
+
+            padding: 2em;
+            margin-top: auto;
+            color: #efefef;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+        }
+
+        .btm-nav {
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'poppins', sans-serif;
+            color: #efefef;
+            font-size: medium;
+            margin: 20px;
+        }
+
+        .social-icons,a,i {
+            color: #efefef;
+        }
+
+        .copyr {
+            font-family: 'poppins', sans-serif;
+            color: #efefef;
+            font-size: medium;
+        }
+
+        .write{
+            display: block;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #efefef;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            
+        }
+        .texta{
+            display: block;
+            width: 500px;
+            margin-top: -25px;
+        }
+        .send{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <header class="top">
+            <img src="image2.jpg" alt="">
+            <h1>TheLivePic</h1>
+            <p>Hey Visitor &#128512;<br> spreading positivity & self development
+                by literatures.</p>
+        </header>
+        <div class="container">
+            <div class="box">
+                <img src="p4.jpg" alt="img">
+            </div>
+            <div class="box">
+                <img src="p9.jpg" alt="img">
+            </div>
+            <div class="box">
+                <img src="p10.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p1.jpg" alt="img">
+            </div>
+            <div class="box">
+                <img src="p2.jpg" alt="img">
+            </div>
+            <div class="box">
+                <img src="p7.jpg" alt="img">
+            </div>
+            <div class="box">
+                <img src="p17.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p11.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p12.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p13.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p14.jpg" alt="image">
+            </div>
+            <div class="box">
+                <img src="p15.jpg" alt="image">
+            </div>
+
+        </div>
+
+        <div class="write">
+            <h4>Feel free to write us</h4>
+            <textarea name="write your opinion" id="" cols="30" rows="10" placeholder="Massage" class="texta"></textarea>
+            <button class="sendc">Send</button>
+        </div>
+
+
+        <footer>
+
+            <a href="#" class="btm-nav">home</a>
+            <!-- <p class="btm-nav">|</p> -->
+            <a href="#" class="btm-nav">about us</a>
+            <!-- <p class="btm-nav">|</p> -->
+            <a href="/contactus.html" class="btm-nav">Contact Us</a>
+            <!-- <p class="btm-nav">|</p> -->
+            <a href="#" class="btm-nav">blog</a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/pranay.ughade.756"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/thelivepic"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.github.com/pranayughade"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pranay-ughade-3b70a81b4"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@ughadepranay814/how-to-be-a-microsoft-learn-student-ambassador-all-you-need-to-know-837f989326af"><i class="fab fa-medium" ></i></a>
+            </div>
+
+            <div class="copyr">
+                <p>&#xA9; 2022 copyright all right reserved | Designed by PRANAY and PRASAD </p>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
