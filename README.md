@@ -1,1 +1,1 @@
-# pranayughadeportfolio.me
+# pranayughade.github.io
