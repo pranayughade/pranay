@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/a952132205.js" crossorigin="anonymous"></script>
-    <title>CSS Display Property</title>
+    <title>TheLivePic</title>
     <style>
         html {
             background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);
@@ -125,7 +125,9 @@
             margin: 20px;
         }
 
-        .social-icons,a,i {
+        .social-icons,
+        a,
+        i {
             color: #efefef;
         }
 
@@ -135,22 +137,104 @@
             font-size: medium;
         }
 
-        .write{
+        .write {
             display: block;
             margin-left: 20px;
             margin-bottom: 20px;
             color: #efefef;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 25px;
-            
+
         }
-        .texta{
+
+        .texta {
             display: block;
             width: 500px;
             margin-top: -25px;
         }
-        .send{
-            
+
+        @media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 800px;
+                margin-left: 40px;
+            }
+
+            .box {
+                border: 1px solid white;
+                background-color: rgb(115, 151, 214);
+                width: 1050px;
+                /* height: auto; */
+            }
+
+            .container img {
+                display: block;
+                width: 1050px;
+
+            }
+
+            .top {
+                font-size: 70px;
+            }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                margin-left: 55px;
+                width: 970px;
+                height: 400px;
+                background-color: #191111;
+                border: 2px solid silver;
+                margin: 15%;
+            }
+
+            .btm-nav {
+                font-size: 30px;
+            }
+
+            .social-icons a {
+                display: inline-block;
+                margin: 20px;
+
+            }
+
+            .top img {
+                width: 250px;
+            }
+
+            h1 {
+                font-size: 80px;
+                margin-bottom: 100px;
+                margin-top: 100px;
+            }
+            .write h4{
+                /* width: 100%; */
+                margin-left: 70px;
+                font-size: 70px;
+            }
+            .texta {
+                display: block;
+                width: 800px;
+                height: 400px;
+                margin-top: -50px;
+                margin-left: 70px;
+                margin: 2px solid rgb(60, 60, 119);
+            }
+            ::placeholder{
+                font-size: 50px;
+            }
+            .sendc{
+                margin-top: 30px;
+                margin-left: 70px;
+                width: 150px;
+                height: 50px;
+            }
+            button{
+                font-size: 30px;
+                border: 2px solid rgb(18, 18, 31);
+            }
         }
     </style>
 </head>
@@ -158,10 +242,9 @@
 <body>
     <div id="grid">
         <header class="top">
-            <img src="image2.jpg" alt="">
+            <img class="timg" src="image2.jpg" alt="">
             <h1>TheLivePic</h1>
-            <p>Hey Visitor &#128512;<br> spreading positivity & self development
-                by literatures.</p>
+            <p>Hello Buddy &#128512;<br> Have a look on my Mobile Edits</p>
         </header>
         <div class="container">
             <div class="box">
@@ -205,7 +288,8 @@
 
         <div class="write">
             <h4>Feel free to write us</h4>
-            <textarea name="write your opinion" id="" cols="30" rows="10" placeholder="Massage" class="texta"></textarea>
+            <textarea name="write your opinion" id="" cols="30" rows="10" placeholder="Massage"
+                class="texta"></textarea>
             <button class="sendc">Send</button>
         </div>
 
@@ -226,11 +310,13 @@
                 <a href="https://www.instagram.com/thelivepic"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.github.com/pranayughade"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pranay-ughade-3b70a81b4"><i class="fab fa-linkedin"></i></a>
-                <a href="https://medium.com/@ughadepranay814/how-to-be-a-microsoft-learn-student-ambassador-all-you-need-to-know-837f989326af"><i class="fab fa-medium" ></i></a>
+                <a
+                    href="https://medium.com/@ughadepranay814/how-to-be-a-microsoft-learn-student-ambassador-all-you-need-to-know-837f989326af"><i
+                        class="fab fa-medium"></i></a>
             </div>
 
             <div class="copyr">
-                <p>&#xA9; 2022 copyright all right reserved | Designed by PRANAY and PRASAD </p>
+                <p>&#xA9; 2022 copyright all right reserved | Designed by PRANAY </p>
             </div>
 
         </footer>
